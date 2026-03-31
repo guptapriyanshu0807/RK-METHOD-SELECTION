@@ -96,25 +96,25 @@ y,RK4
 sin(t),HEUN
 -0.5*y,HEUN
 -y + t,HEUN
--cos(t)*y,MIDPOINT
+-cos(t)*y,HEUN
 -y/(1+t),HEUN
 -y + exp(-t),HEUN
 (1+t)*y,RK4
 y - t**2,MIDPOINT
 t*y,HEUN
 -2*y + t**2,RK4
-y + exp(-t),MIDPOINT
+y + exp(-t),HEUN
 -y + cos(t),HEUN
 -2*y,RK4
 3*y,RK4
 -3*y,RK4
-0.3*y,MIDPOINT
+0.3*y,HEUN
 -4*y,RK4
 -y + t**2,MIDPOINT
 -y + t,HEUN
 y + t,RK4
 -2*y + t,RK4
--y + sin(t),HEUN
+-y + sin(t),MIDPOINT
 cos(t)*y,MIDPOINT
 -sin(t)*y,HEUN
 2*cos(t)*y,RK4
@@ -125,14 +125,14 @@ t**2*y,RK4
 y/(1+t),EULER
 -2*y/(1+t),RK4
 y/(2+t),EULER
--y + exp(t),MIDPOINT
+-y + exp(t),HEUN
 y + exp(t),EULER
 -2*y + exp(-t),RK4
 2*y + t,RK4
 -3*y + t**2,RK4
 5*y,RK4
 -5*y,RK4
-0.1*y,HEUN
+0.1*y,MIDPOINT
 -0.1*y,HEUN
 y/t,EULER
 -2*y/t,RK4
@@ -184,7 +184,7 @@ t**3,MIDPOINT
 0.2*y,HEUN
 0.2*y,HEUN
 -0.2*y,HEUN
--0.2*y,MIDPOINT
+-0.2*y,HEUN
 0.4*y,HEUN
 -0.4*y,HEUN
 0.7*y,HEUN
@@ -195,7 +195,7 @@ t**3,MIDPOINT
 -1.5*y,RK4
 2.5*y,RK4
 -2.5*y,RK4
--y + 2,MIDPOINT
+-y + 2,HEUN
 -y + 3,HEUN
 -y + 4,RK4
 -2*y + 1,RK4
@@ -228,7 +228,7 @@ y - exp(-t),RK4
 -2*t*y,HEUN
 4*t*y,RK4
 -4*t*y,RK4
-0.5*t*y,MIDPOINT
+0.5*t*y,HEUN
 -0.5*t*y,HEUN
 t*y,HEUN
 -t*y,HEUN
@@ -275,26 +275,26 @@ y,RK4
 -y,HEUN
 -y,RK4
 -y,HEUN
--y,HEUN
+-y,MIDPOINT
 y,RK4
 -0.5*y,HEUN
 0.5*y,HEUN
 -2*y,RK4
 2*y,RK4
--y + 1,MIDPOINT
+-y + 1,HEUN
 -y + t,HEUN
 t*y,RK4
--t*y,HEUN
+-t*y,MIDPOINT
 cos(t)*y,RK4
--cos(t)*y,MIDPOINT
--y,MIDPOINT
+-cos(t)*y,HEUN
+-y,HEUN
 y,RK4
 -2*y,RK4
 2*y,RK4
--y + 1,HEUN
+-y + 1,MIDPOINT
 t*y,HEUN
 cos(t)*y,MIDPOINT
--y + sin(t),MIDPOINT
+-y + sin(t),HEUN
 -y,HEUN
 y,RK4
 -2*y,RK4
@@ -345,13 +345,13 @@ y,RK4
 7*y,RK4
 -8*y,RK4
 8*y,RK4
--y,HEUN
+-y,MIDPOINT
 y,RK4
--0.5*y,HEUN
+-0.5*y,MIDPOINT
 -y + 1,HEUN
--(1+t**2)*y,HEUN
+-(1+t**2)*y,MIDPOINT
 (1+t**2)*y,RK4
--t/(1+t**2)*y,MIDPOINT
+-t/(1+t**2)*y,HEUN
 t/(1+t**2)*y,HEUN
 -2*y + exp(-2*t),RK4
 -y + 2*exp(-t),HEUN
@@ -388,4 +388,4 @@ y + exp(-t),EULER
 -8*y,RK4
 -9*y,RK4
 -10*y,RK4
--1*y,MIDPOINT
+-1*y,HEUN
