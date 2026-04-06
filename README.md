@@ -86,6 +86,7 @@ The objective is to balance:
 
 - Total samples: **7390**
 
+
 ### Best Method Distribution:
 | Method    | Count |
 |----------|------|
@@ -93,6 +94,10 @@ The objective is to balance:
 | HEUN     | 1786 |
 | EULER    | 1684 |
 | MIDPOINT |  919 |
+
+- TRAIN SAMPLE : **5912**
+- TEST SAMPLE: **1478**
+
 
 👉 The dataset is **imbalanced**, with RK4 dominating.
 
