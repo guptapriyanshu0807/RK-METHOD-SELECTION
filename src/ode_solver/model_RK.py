@@ -217,19 +217,32 @@ def model_RK_(data):
     # Model architecture
     inputs = keras.Input(shape=(X_scaled.shape[1],))
 
+    # x = keras.layers.Dense(256)(inputs)
+    # x = keras.layers.BatchNormalization()(x)
+    # x = keras.layers.Activation('relu')(x)
+    # x = keras.layers.Dropout(0.3)(x)
+
+    # x = keras.layers.Dense(128)(x)
+    # x = keras.layers.BatchNormalization()(x)
+    # x = keras.layers.Activation('relu')(x)
+    # x = keras.layers.Dropout(0.2)(x)
+
+    # x = keras.layers.Dense(64)(x)
+    # x = keras.layers.BatchNormalization()(x)
+    # x = keras.layers.Activation('relu')(x)
     x = keras.layers.Dense(256)(inputs)
     x = keras.layers.BatchNormalization()(x)
-    x = keras.layers.Activation('relu')(x)
+    x = keras.layers.LeakyReLU(alpha=0.01)(x)
     x = keras.layers.Dropout(0.3)(x)
 
     x = keras.layers.Dense(128)(x)
     x = keras.layers.BatchNormalization()(x)
-    x = keras.layers.Activation('relu')(x)
+    x = keras.layers.LeakyReLU(alpha=0.01)(x)
     x = keras.layers.Dropout(0.2)(x)
 
     x = keras.layers.Dense(64)(x)
     x = keras.layers.BatchNormalization()(x)
-    x = keras.layers.Activation('relu')(x)
+    x = keras.layers.LeakyReLU(alpha=0.01)(x)
 
     outputs = keras.layers.Dense(4, activation='softmax')(x)
 
