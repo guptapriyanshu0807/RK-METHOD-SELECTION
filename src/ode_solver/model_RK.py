@@ -235,7 +235,7 @@ def model_RK_(data):
 
     model = keras.Model(inputs, outputs)
 
-    # ✅ FIX: Plain float LR — compatible with ReduceLROnPlateau
+    # FIX: Plain float LR — compatible with ReduceLROnPlateau
     optimizer = keras.optimizers.Adam(
         learning_rate=0.001,   # plain float, NOT a schedule object
         clipnorm=1.0
