@@ -194,16 +194,17 @@ def model_RK_(data):
     label_encoder = LabelEncoder()
     y_encoded = label_encoder.fit_transform(y)
 
-    scaler = StandardScaler()
-    X_scaled = scaler.fit_transform(X)
-
-    # Stratified split to preserve class ratios
+    # Split before scaling to avoid leaking test-set statistics into training.
     X_train, X_test, y_train, y_test = train_test_split(
-        X_scaled, y_encoded,
+        X, y_encoded,
         test_size=0.2,
         random_state=42,
         stratify=y_encoded
     )
+
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
 
     # SMOTE to oversample minority classes
     sm = SMOTE(random_state=42)
@@ -215,7 +216,7 @@ def model_RK_(data):
     class_weights = dict(zip(classes, weights))
 
     # Model architecture
-    inputs = keras.Input(shape=(X_scaled.shape[1],))
+    inputs = keras.Input(shape=(X_train.shape[1],))
 
     # x = keras.layers.Dense(256)(inputs)
     # x = keras.layers.BatchNormalization()(x)
@@ -244,7 +245,7 @@ def model_RK_(data):
     x = keras.layers.BatchNormalization()(x)
     x = keras.layers.LeakyReLU(alpha=0.01)(x)
 
-    outputs = keras.layers.Dense(4, activation='softmax')(x)
+    outputs = keras.layers.Dense(len(label_encoder.classes_), activation='softmax')(x)
 
     model = keras.Model(inputs, outputs)
 
@@ -325,4 +326,3 @@ def model_RK_(data):
     joblib.dump(label_encoder, "model/encoder.joblib")
 
     return acc
-

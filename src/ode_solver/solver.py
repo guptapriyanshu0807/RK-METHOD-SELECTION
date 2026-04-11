@@ -44,6 +44,36 @@ def run_method(step_fn, f, t0, y0, h, n):
     return y, elapsed_ms
 
 
+def evaluate_exact_solution(exact_expression, t_vals):
+    """
+    Evaluate an explicit exact solution y(t).
+
+    Raises
+    ------
+    ValueError
+        If the expression is not an explicit function of t or produces
+        invalid numeric values.
+    """
+    t_sym, y_sym = sym.symbols("t y")
+    exact_sym = sym.sympify(exact_expression)
+
+    if y_sym in exact_sym.free_symbols:
+        raise ValueError("exact_solution must be an explicit function of t, not y")
+
+    exact_fn = sym.lambdify(t_sym, exact_sym, "numpy")
+    y_exact = exact_fn(t_vals)
+
+    if not isinstance(y_exact, np.ndarray):
+        y_exact = np.full(t_vals.shape, float(y_exact))
+    else:
+        y_exact = np.asarray(y_exact, dtype=float)
+
+    if np.any(np.isnan(y_exact)) or np.any(np.isinf(y_exact)):
+        raise ValueError("exact_solution produced invalid numeric values")
+
+    return y_exact
+
+
 def l2_error(y_exact, y_num, h):
     """
     Discrete L2 norm:  sqrt( h * sum( (y_exact - y_num)^2 ) )
@@ -131,45 +161,17 @@ def solve_all(df):
     for idx, row in df.iterrows():
         f = sym.lambdify((t_sym, y_sym), sym.sympify(row["f_expression"]), "numpy")
 
-        # ------------------------------------------------------------------
-        # FIX: The exact_solution expressions contain both 't' and 'y'
-        # (e.g. "0.5*t**2 + 2.37*t*y + exp(t) - cos(t) + 1.0").
-        # Lambdifying over t_sym only left 'y' as an unresolved SymPy symbol,
-        # causing "Cannot convert expression to float" at .astype(float).
-        #
-        # Solution: lambdify over (t_sym, y_sym) and evaluate using the
-        # high-accuracy RK4 numerical solution as the reference y values.
-        # This is valid because RK4 with h=0.01 is accurate enough to serve
-        # as the "exact" baseline for comparing coarser methods.
-        # ------------------------------------------------------------------
-        exact = sym.lambdify((t_sym, y_sym), sym.sympify(row["exact_solution"]), "numpy")
-
         t0, y0 = float(row["t0"]), float(row["y0"])
         tf, h  = float(row["tf"]), float(row["step_size_h"])
         n      = int(row["num_steps"])
 
         t_vals = np.linspace(t0, tf, n + 1)
-
-        # Use RK4 as the reference solution to evaluate the exact expression
-        # y_ref, _ = run_method(RK_METHODS["rk4"], f, t0, y0, h, n)
         y_ref, _ = run_method(RK_METHODS["rk10"], f, t0, y0, h, n)
-        
-        # y_exact = exact(t_vals, y_ref)
+
         try:
-            y_exact = exact(t_vals, y_ref)
-
-            if np.any(np.isnan(y_exact)) or np.any(np.isinf(y_exact)):
-                raise ValueError("Invalid exact solution")
-
-        except:
+            y_exact = evaluate_exact_solution(row["exact_solution"], t_vals)
+        except ValueError:
             y_exact = y_ref
-
-
-        # Safety cast: handle scalar or non-array results from lambdify
-        if not isinstance(y_exact, np.ndarray):
-            y_exact = np.full(t_vals.shape, float(y_exact))
-        else:
-            y_exact = y_exact.astype(float)
 
         l2_errors, cpu_times = {}, {}
 

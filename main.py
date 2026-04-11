@@ -41,7 +41,7 @@ def main():
     # Summary
 
 
-    df = generate_function_dataset(df1)
+    df = generate_function_dataset(df)
     df.to_csv(FUNCTION_VALUE,index = False)
     print(f"\n[5/5] Results saved → {FUNCTION_VALUE}")
     print(f"")
