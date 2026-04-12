@@ -14,7 +14,8 @@ import pandas as pd
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 
 from config.settings    import INPUT_CSV, OUTPUT_CSV, STEP_SIZE , MODEL_CSV , FUNCTION_VALUE
-from src.ode_solver     import ODE_PROBLEMS, build_dataframe, solve_all ,generate_function_dataset , model_RK_
+from src.ode_solver import ODE_PROBLEMS, build_dataframe, solve_all, generate_function_dataset
+from src.ode_solver.model_RK import model_RK_
 
 def main():
     print("=" * 55)

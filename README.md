@@ -126,6 +126,55 @@ Run the complete pipeline:
 python main.py
 ```
 
+## Run The Local Web App
+
+Start the FastAPI server:
+
+```bash
+uvicorn app:app --reload
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+The web app lets you:
+
+- enter a first-order ODE in terms of `t` and `y`
+- provide `t0`, `y0`, `tf`, and `step_size`
+- optionally provide an exact solution
+- get the predicted best RK method from the trained model
+- see the computed numerical solution for that method
+- compare all methods by error and runtime
+
+### API endpoint
+
+You can also call the JSON API directly:
+
+```bash
+curl -X POST http://127.0.0.1:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{
+    "f_expression": "t + y",
+    "t0": 0,
+    "y0": 1,
+    "tf": 1,
+    "step_size": 0.01,
+    "exact_solution": "2*exp(t) - t - 1"
+  }'
+```
+
+Example response fields:
+
+- `predicted_best_method`
+- `benchmark_best_method`
+- `class_probabilities`
+- `method_metrics`
+- `solution.t_values`
+- `solution.y_values`
+
 ## What Happens When You Run `main.py`
 
 The script performs these steps:
@@ -270,6 +319,9 @@ These are important because the dataset is imbalanced.
 
 - `model/model.joblib`
   Saved trained model.
+
+- `model/model.keras`
+  Native Keras model format used by the FastAPI app when available.
 
 - `model/scaler.joblib`
   Saved feature scaler.
@@ -421,6 +473,7 @@ The tests check:
 - This is both a numerical solver project and a machine learning project
 - The solver produces labels by comparing RK methods on the same ODE
 - The neural network learns to predict the best RK method from generated features
+- The FastAPI app exposes the model as a local website and JSON API
 - Confusion matrix and classification report are essential for understanding model quality
 - Accuracy is useful, but it is not enough by itself
 

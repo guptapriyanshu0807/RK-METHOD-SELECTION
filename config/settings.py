@@ -11,7 +11,7 @@ MODEL_CSV = "data/model_ode.csv"
 FUNCTION_VALUE = "data/function_value.csv"
 # --- Solver Parameters ---
 STEP_SIZE = 0.01       # Integration step size h
-THRESHOLD = 1e-5       # L2 error threshold for "good enough" accuracy
+THRESHOLD = 1e-5      # L2 error threshold for "good enough" accuracy
 
 # --- DataFrame Columns ---
 COLUMNS = [

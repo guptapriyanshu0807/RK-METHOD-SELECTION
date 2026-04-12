@@ -67,7 +67,7 @@ f_expression,best_rk_method
 -3.8,EULER
 7.6,EULER
 -8.3,EULER
--8.6,HEUN
+-8.6,EULER
 5.3,EULER
 -0.5,EULER
 -4.7,EULER
@@ -906,7 +906,7 @@ f_expression,best_rk_method
 1.0,EULER
 -1.9,EULER
 7.6,EULER
--6.0,EULER
+-6.0,MIDPOINT
 -3.6,EULER
 8.2,EULER
 1.5,EULER
@@ -1004,7 +1004,7 @@ f_expression,best_rk_method
 3.95*y + 0.86,RK4
 1.84*y + 0.43,RK4
 0.79*y + 1.29,RK4
-0.26*y + 1.71,HEUN
+0.26*y + 1.71,MIDPOINT
 -2.89*y + -1.29,RK4
 3.95*y + 0.0,RK4
 -0.26*y + 2.57,HEUN
@@ -1109,7 +1109,7 @@ f_expression,best_rk_method
 -1.84*y + 0.0,RK4
 -3.95*y + 2.57,RK4
 2.89*y + -2.14,RK4
--0.79*y + 1.29,HEUN
+-0.79*y + 1.29,MIDPOINT
 1.84*y + 2.14,RK4
 2.37*y + 0.86,RK4
 1.32*y + 0.43,RK4
@@ -1139,7 +1139,7 @@ f_expression,best_rk_method
 -5.0*y + 1.71,RK4
 2.37*y + 0.86,RK4
 -5.0*y + 1.71,RK4
--0.79*y + 2.14,MIDPOINT
+-0.79*y + 2.14,HEUN
 -3.42*y + 2.14,RK4
 0.79*y + -0.86,RK4
 -3.42*y + -1.29,RK4
@@ -1162,7 +1162,7 @@ f_expression,best_rk_method
 2.37*y + 0.0,RK4
 4.47*y + -3.0,RK4
 -4.47*y + -1.29,RK4
--0.26*y + -2.14,HEUN
+-0.26*y + -2.14,MIDPOINT
 2.89*y + 0.43,RK4
 4.47*y + -2.57,RK4
 0.79*y + 0.43,RK4
@@ -1176,7 +1176,7 @@ f_expression,best_rk_method
 -1.84*y + 2.57,RK4
 4.47*y + -0.86,RK4
 5.0*y + 0.43,RK4
--0.26*y + -1.29,HEUN
+-0.26*y + -1.29,MIDPOINT
 3.42*y + 3.0,RK4
 1.84*y + 3.0,RK4
 -2.89*y + 1.71,RK4
@@ -1204,9 +1204,9 @@ f_expression,best_rk_method
 -1.84*y + 0.0,RK4
 4.47*y + -1.71,RK4
 2.37*y + -3.0,RK4
-0.26*y + 2.57,HEUN
+0.26*y + 2.57,MIDPOINT
 -2.89*y + 0.0,RK4
-1.32*y + -2.57,MIDPOINT
+1.32*y + -2.57,HEUN
 0.26*y + -0.86,HEUN
 1.32*y + 2.14,RK4
 -2.89*y + -2.57,RK4
@@ -1225,16 +1225,16 @@ f_expression,best_rk_method
 2.89*y + -0.43,RK4
 2.89*y + 1.29,RK4
 3.42*y + 3.0,RK4
-0.26*y + -2.14,MIDPOINT
+0.26*y + -2.14,HEUN
 1.84*y + -0.86,RK4
 -2.37*y + 2.14,RK4
 -5.0*y + 0.86,RK4
--0.79*y + -1.71,MIDPOINT
+-0.79*y + -1.71,HEUN
 1.32*y + 0.43,RK4
 3.42*y + 2.14,RK4
 1.32*y + -2.57,RK4
 5.0*y + -2.14,RK4
--0.26*y + -2.57,HEUN
+-0.26*y + -2.57,MIDPOINT
 -2.89*y + 0.43,RK4
 4.47*y + 1.29,RK4
 1.84*y + 1.71,RK4
@@ -1262,7 +1262,7 @@ f_expression,best_rk_method
 3.42*y + 1.29,RK4
 -1.32*y + 2.14,RK4
 1.32*y + -2.57,RK4
--0.26*y + -0.86,MIDPOINT
+-0.26*y + -0.86,HEUN
 2.37*y + -3.0,RK4
 -0.26*y + 0.86,MIDPOINT
 5.0*y + -1.71,RK4
@@ -1287,12 +1287,12 @@ f_expression,best_rk_method
 -2.37*y + 0.0,RK4
 1.84*y + -2.57,RK4
 -1.84*y + 0.0,RK4
--0.79*y + 2.57,MIDPOINT
+-0.79*y + 2.57,HEUN
 -2.37*y + 2.14,RK4
 5.0*y + -3.0,RK4
 -2.89*y + -2.57,RK4
 1.32*y + 0.43,RK4
--0.26*y + -1.29,HEUN
+-0.26*y + -1.29,MIDPOINT
 1.32*y + 2.57,RK4
 3.95*y + -1.71,RK4
 -3.42*y + 2.14,RK4
@@ -1327,7 +1327,7 @@ f_expression,best_rk_method
 0.79*y + 3.0,RK4
 0.79*y + 0.86,RK4
 4.47*y + -1.71,RK4
--0.26*y + -2.14,HEUN
+-0.26*y + -2.14,MIDPOINT
 -3.95*y + -3.0,RK4
 -1.32*y + -3.0,RK4
 -5.0*y + -0.86,RK4
@@ -1338,11 +1338,11 @@ f_expression,best_rk_method
 1.32*y + 0.86,RK4
 -0.26*y + -0.86,HEUN
 1.84*y + 2.14,RK4
-0.26*y + -2.14,MIDPOINT
+0.26*y + -2.14,HEUN
 5.0*y + 2.14,RK4
 4.47*y + 2.57,RK4
--0.26*y + 1.71,MIDPOINT
--2.37*y + 1.71,MIDPOINT
+-0.26*y + 1.71,HEUN
+-2.37*y + 1.71,HEUN
 4.47*y + -0.43,RK4
 -2.37*y + 0.86,RK4
 -1.32*y + 1.29,RK4
@@ -1351,7 +1351,7 @@ f_expression,best_rk_method
 -2.37*y + 1.29,RK4
 0.26*y + 0.0,HEUN
 -1.84*y + -1.71,RK4
--0.79*y + 2.14,MIDPOINT
+-0.79*y + 2.14,HEUN
 -5.0*y + -3.0,RK4
 1.84*y + -2.14,RK4
 1.32*y + -0.86,RK4
@@ -1372,7 +1372,7 @@ f_expression,best_rk_method
 -5.0*y + -0.43,RK4
 5.0*y + 0.0,RK4
 -5.0*y + -1.71,RK4
--0.26*y + -2.57,HEUN
+-0.26*y + -2.57,MIDPOINT
 -0.26*y + 2.14,HEUN
 2.89*y + 3.0,RK4
 3.95*y + -0.43,RK4
@@ -1391,7 +1391,7 @@ f_expression,best_rk_method
 -2.37*y + -2.14,RK4
 -2.89*y + -3.0,RK4
 1.84*y + -1.71,RK4
--0.79*y + -0.86,MIDPOINT
+-0.79*y + -0.86,HEUN
 1.32*y + 0.43,RK4
 0.26*y + 2.57,RK4
 2.37*y + 3.0,RK4
@@ -1417,7 +1417,7 @@ f_expression,best_rk_method
 -2.37*y + -2.57,RK4
 3.42*y + -0.43,RK4
 4.47*y + -3.0,RK4
--1.84*y + 2.57,HEUN
+-1.84*y + 2.57,MIDPOINT
 -4.47*y + 0.0,RK4
 -1.84*y + -1.29,RK4
 3.42*y + -0.43,RK4
@@ -1438,7 +1438,7 @@ f_expression,best_rk_method
 3.42*y + 2.57,RK4
 4.47*y + -2.57,RK4
 0.79*y + 0.43,RK4
--0.26*y + -1.29,HEUN
+-0.26*y + -1.29,MIDPOINT
 -3.95*y + -0.86,RK4
 0.26*y + 2.57,RK4
 -0.26*y + -1.71,HEUN
@@ -1464,7 +1464,7 @@ f_expression,best_rk_method
 -0.26*y + -0.43,HEUN
 -2.89*y + -1.71,RK4
 4.47*y + 3.0,RK4
-0.26*y + 2.57,HEUN
+0.26*y + 2.57,MIDPOINT
 2.89*y + -0.86,RK4
 -4.47*y + -3.0,RK4
 -1.84*y + 2.14,RK4
@@ -1506,7 +1506,7 @@ f_expression,best_rk_method
 -1.32*y + 0.0,RK4
 2.37*y + -3.0,RK4
 -4.47*y + 2.57,RK4
-0.26*y + -0.43,HEUN
+0.26*y + -0.43,MIDPOINT
 -4.47*y + -3.0,RK4
 -2.37*y + -0.86,RK4
 5.0*y + -1.29,RK4
@@ -1521,7 +1521,7 @@ f_expression,best_rk_method
 -5.0*y + 2.57,RK4
 2.89*y + -2.57,RK4
 -4.47*y + -2.57,RK4
-0.26*y + -3.0,HEUN
+0.26*y + -3.0,MIDPOINT
 4.47*y + 1.71,RK4
 0.26*y + 0.43,RK4
 5.0*y + -2.57,RK4
@@ -1535,24 +1535,24 @@ f_expression,best_rk_method
 1.32*y + -0.43,RK4
 2.37*y + 0.0,RK4
 -3.95*y + 2.57,RK4
-0.26*y + -2.57,MIDPOINT
+0.26*y + -2.57,HEUN
 -5.0*y + -2.57,RK4
 -4.47*y + 0.43,RK4
 -3.95*y + 2.14,RK4
--0.26*y + 3.0,HEUN
+-0.26*y + 3.0,MIDPOINT
 -1.84*y + 1.29,RK4
 0.79*y + 2.57,RK4
 2.37*y + -0.86,RK4
 5.0*y + 0.0,RK4
 2.37*y + -2.57,RK4
 -1.32*y + -3.0,RK4
--0.26*y + 0.43,HEUN
+-0.26*y + 0.43,MIDPOINT
 -3.42*y + -3.0,RK4
 -2.89*y + 2.57,RK4
--0.79*y + 0.86,HEUN
+-0.79*y + 0.86,MIDPOINT
 -3.42*y + 3.0,RK4
 2.37*y + 2.57,RK4
-0.26*y + -2.57,HEUN
+0.26*y + -2.57,MIDPOINT
 4.47*y + -2.57,RK4
 4.47*y + 0.43,RK4
 -5.0*y + 0.43,RK4
@@ -1569,19 +1569,19 @@ f_expression,best_rk_method
 -1.84*y + 0.86,RK4
 0.79*y + 3.0,RK4
 -2.37*y + 0.43,RK4
-0.26*y + 1.71,HEUN
+0.26*y + 1.71,MIDPOINT
 3.95*y + 0.0,RK4
 1.84*y + 1.29,RK4
 1.84*y + 2.14,RK4
 -3.42*y + -3.0,RK4
 -4.47*y + 1.29,RK4
--0.79*y + 2.14,HEUN
+-0.79*y + 2.14,MIDPOINT
 -0.79*y + -2.14,RK4
 -0.26*y + -1.71,HEUN
 0.79*y + 2.57,RK4
 5.0*y + 2.57,RK4
 3.95*y + -0.43,RK4
--0.26*y + 1.71,HEUN
+-0.26*y + 1.71,MIDPOINT
 1.32*y + -0.43,RK4
 -4.47*y + -3.0,RK4
 5.0*y + 2.57,RK4
@@ -1592,10 +1592,10 @@ f_expression,best_rk_method
 1.32*y + -3.0,RK4
 3.95*y + -1.29,RK4
 4.47*y + 2.57,RK4
-0.26*y + 0.0,HEUN
+0.26*y + 0.0,MIDPOINT
 -2.89*y + 3.0,RK4
 -4.47*y + 2.14,RK4
--0.26*y + 0.0,MIDPOINT
+-0.26*y + 0.0,HEUN
 0.79*y + -2.57,RK4
 -1.32*y + -2.14,RK4
 3.42*y + -2.14,RK4
@@ -1619,14 +1619,14 @@ f_expression,best_rk_method
 -3.95*y + 1.71,RK4
 2.37*y + 1.71,RK4
 -3.95*y + -2.57,RK4
--0.79*y + 0.43,HEUN
+-0.79*y + 0.43,MIDPOINT
 -1.32*y + 3.0,RK4
 1.32*y + 0.0,RK4
 0.26*y + -3.0,HEUN
 -3.42*y + 0.43,RK4
 5.0*y + -2.57,RK4
 -3.95*y + -0.86,RK4
--0.26*y + 2.14,HEUN
+-0.26*y + 2.14,MIDPOINT
 -3.95*y + -1.29,RK4
 1.32*y + 2.57,RK4
 -2.37*y + 0.43,RK4
@@ -1641,9 +1641,9 @@ f_expression,best_rk_method
 -1.32*y + 0.86,RK4
 -3.42*y + -2.14,RK4
 3.95*y + 0.0,RK4
--0.26*y + 1.29,HEUN
+-0.26*y + 1.29,MIDPOINT
 -3.42*y + -1.71,RK4
-0.26*y + -0.86,MIDPOINT
+0.26*y + -0.86,HEUN
 -1.32*y + -2.57,RK4
 -3.95*y + 3.0,RK4
 2.89*y + 0.0,RK4
@@ -1663,7 +1663,7 @@ f_expression,best_rk_method
 -4.47*y + 0.43,RK4
 3.95*y + 0.0,RK4
 1.32*y + -1.71,RK4
--0.26*y + -2.14,HEUN
+-0.26*y + -2.14,MIDPOINT
 3.42*y + -2.57,RK4
 3.42*y + -3.0,RK4
 -2.37*y + 2.14,RK4
@@ -1687,7 +1687,7 @@ f_expression,best_rk_method
 -0.79*y + -1.71,RK4
 -2.37*y + -0.86,RK4
 -3.42*y + 1.29,RK4
-0.26*y + 1.71,MIDPOINT
+0.26*y + 1.71,HEUN
 2.89*y + 0.0,RK4
 -2.37*y + 1.29,RK4
 -1.32*y + -3.0,RK4
@@ -1780,7 +1780,7 @@ f_expression,best_rk_method
 2.89*y + 0.43,RK4
 0.79*y + -0.43,RK4
 -3.42*y + 1.71,RK4
-0.26*y + 1.71,MIDPOINT
+0.26*y + 1.71,HEUN
 -1.84*y + -0.43,RK4
 0.26*y + -0.86,HEUN
 -2.37*y + 0.43,RK4
@@ -1789,8 +1789,8 @@ f_expression,best_rk_method
 -1.84*y + -0.43,RK4
 1.32*y + -1.29,RK4
 4.47*y + -2.14,RK4
--1.32*y + 2.57,MIDPOINT
--0.79*y + 2.14,MIDPOINT
+-1.32*y + 2.57,HEUN
+-0.79*y + 2.14,HEUN
 1.84*y + 2.57,RK4
 -2.89*y + 2.14,RK4
 -5.0*y + -2.14,RK4
@@ -1821,9 +1821,9 @@ f_expression,best_rk_method
 -3.42*y + -2.57,RK4
 3.95*y + -3.0,RK4
 3.42*y + 2.14,RK4
--0.79*y + 0.86,HEUN
+-0.79*y + 0.86,MIDPOINT
 1.32*y + -1.29,RK4
--0.26*y + 0.0,MIDPOINT
+-0.26*y + 0.0,HEUN
 3.42*y + 2.57,RK4
 -4.47*y + 1.29,RK4
 2.89*y + 0.0,RK4
@@ -1837,7 +1837,7 @@ f_expression,best_rk_method
 -5.0*y + -3.0,RK4
 0.79*y + -1.29,RK4
 -5.0*y + 1.71,RK4
--0.26*y + -3.0,MIDPOINT
+-0.26*y + -3.0,HEUN
 5.0*y + -1.71,RK4
 0.79*y + -1.71,RK4
 1.84*y + -0.43,RK4
@@ -1867,10 +1867,10 @@ f_expression,best_rk_method
 -0.26*y + 3.0,HEUN
 -4.47*y + 1.71,RK4
 -3.42*y + -1.29,RK4
--0.26*y + -1.71,MIDPOINT
+-0.26*y + -1.71,HEUN
 -1.84*y + -2.57,RK4
 1.84*y + -0.86,RK4
--0.79*y + 0.86,HEUN
+-0.79*y + 0.86,MIDPOINT
 -1.32*y + -3.0,RK4
 2.89*y + 1.71,RK4
 0.79*y + 2.14,RK4
@@ -1932,13 +1932,13 @@ f_expression,best_rk_method
 -3.42*y + -3.0,RK4
 -2.89*y + -2.14,RK4
 4.47*y + -1.71,RK4
--0.26*y + -2.57,HEUN
+-0.26*y + -2.57,MIDPOINT
 4.47*y + 3.0,RK4
 -3.95*y + 1.71,RK4
 -2.37*y + 0.0,RK4
 5.0*y + 1.29,RK4
 4.47*y + -0.43,RK4
-0.26*y + -0.86,MIDPOINT
+0.26*y + -0.86,HEUN
 -3.42*y + 2.57,RK4
 5.0*y + 3.0,RK4
 1.32*y + -3.0,RK4
@@ -1947,7 +1947,7 @@ f_expression,best_rk_method
 -1.32*y + -2.14,RK4
 1.32*y + 0.0,RK4
 3.42*y + -2.57,RK4
--0.26*y + 2.14,HEUN
+-0.26*y + 2.14,MIDPOINT
 -2.89*y + -0.86,RK4
 4.47*y + 1.71,RK4
 1.32*y + -1.29,RK4
@@ -1977,7 +1977,7 @@ f_expression,best_rk_method
 -4.47*y + 0.0,RK4
 1.32*y + 1.29,RK4
 0.79*y + 2.57,RK4
--0.26*y + 2.57,HEUN
+-0.26*y + 2.57,MIDPOINT
 1.32*y + 0.43,RK4
 2.89*y + 2.57,RK4
 -3.95*y + -2.14,RK4
@@ -1987,7 +1987,7 @@ f_expression,best_rk_method
 -2.37*y + -3.0,RK4
 0.79*y + -0.86,RK4
 3.42*y + -1.29,RK4
--0.79*y + 3.0,MIDPOINT
+-0.79*y + 3.0,HEUN
 3.95*y + -1.29,RK4
 0.26*y + 3.0,RK4
 -2.89*y + -2.57,RK4
@@ -2137,7 +2137,7 @@ f_expression,best_rk_method
 3.95*y + t**1,RK4
 -3.95*y + t**2,RK4
 4.47*y + t**2,RK4
-0.26*y + t**3,HEUN
+0.26*y + t**3,MIDPOINT
 -3.95*y + t**3,RK4
 -3.42*y + t**3,RK4
 0.26*y + t**3,RK4
@@ -2180,7 +2180,7 @@ f_expression,best_rk_method
 3.95*y + t**1,RK4
 3.42*y + t**2,RK4
 0.26*y + t**2,RK4
--0.26*y + t**1,HEUN
+-0.26*y + t**1,MIDPOINT
 5.0*y + t**3,RK4
 4.47*y + t**2,RK4
 2.89*y + t**3,RK4
@@ -2197,7 +2197,7 @@ f_expression,best_rk_method
 2.89*y + t**2,RK4
 2.37*y + t**3,RK4
 4.47*y + t**3,RK4
--0.79*y + t**1,HEUN
+-0.79*y + t**1,MIDPOINT
 2.37*y + t**2,RK4
 2.89*y + t**3,RK4
 1.32*y + t**3,RK4
@@ -2234,7 +2234,7 @@ f_expression,best_rk_method
 -0.79*y + t**2,RK4
 -2.89*y + t**3,RK4
 1.32*y + t**2,RK4
-0.26*y + t**2,HEUN
+0.26*y + t**2,MIDPOINT
 3.42*y + t**3,RK4
 1.84*y + t**2,RK4
 -1.32*y + t**1,RK4
@@ -2449,7 +2449,7 @@ f_expression,best_rk_method
 2.37*y + t**3,RK4
 0.79*y + t**2,RK4
 3.42*y + t**1,RK4
-0.26*y + t**1,MIDPOINT
+0.26*y + t**1,HEUN
 3.42*y + t**1,RK4
 -0.26*y + t**3,MIDPOINT
 0.26*y + t**2,RK4
@@ -2535,7 +2535,7 @@ f_expression,best_rk_method
 -2.89*y + t**1,RK4
 3.95*y + t**1,RK4
 2.89*y + t**1,RK4
-0.26*y + t**3,MIDPOINT
+0.26*y + t**3,HEUN
 1.84*y + t**2,RK4
 -2.89*y + t**1,RK4
 3.42*y + t**1,RK4
@@ -2563,7 +2563,7 @@ f_expression,best_rk_method
 1.84*y + t**1,RK4
 -0.79*y + t**3,RK4
 1.84*y + t**3,RK4
-0.26*y + t**2,HEUN
+0.26*y + t**2,MIDPOINT
 -2.37*y + t**3,RK4
 -2.89*y + t**1,RK4
 -0.26*y + t**2,MIDPOINT
@@ -2571,7 +2571,7 @@ f_expression,best_rk_method
 -2.89*y + t**3,RK4
 2.37*y + t**2,RK4
 -2.37*y + t**3,RK4
--0.26*y + t**1,HEUN
+-0.26*y + t**1,MIDPOINT
 0.79*y + t**1,RK4
 4.47*y + t**1,RK4
 3.95*y + t**3,RK4
@@ -2600,7 +2600,7 @@ f_expression,best_rk_method
 -0.26*y + t**2,MIDPOINT
 3.95*y + t**1,RK4
 -0.79*y + t**1,RK4
-0.26*y + t**2,HEUN
+0.26*y + t**2,MIDPOINT
 0.26*y + t**3,RK4
 -2.89*y + t**2,RK4
 -4.47*y + t**1,RK4
@@ -2713,7 +2713,7 @@ f_expression,best_rk_method
 -3.42*y + t**1,RK4
 -2.89*y + t**1,RK4
 1.84*y + t**1,RK4
-0.26*y + t**2,HEUN
+0.26*y + t**2,MIDPOINT
 -3.95*y + t**2,RK4
 1.84*y + t**2,RK4
 3.42*y + t**2,RK4
@@ -2746,7 +2746,7 @@ f_expression,best_rk_method
 -1.32*y + t**2,RK4
 4.47*y + t**3,RK4
 1.32*y + t**3,RK4
-0.26*y + t**3,HEUN
+0.26*y + t**3,MIDPOINT
 0.79*y + t**2,RK4
 1.84*y + t**2,RK4
 -4.47*y + t**2,RK4
@@ -2761,7 +2761,7 @@ f_expression,best_rk_method
 2.89*y + t**1,RK4
 0.79*y + t**1,RK4
 -3.42*y + t**1,RK4
--0.26*y + t**1,HEUN
+-0.26*y + t**1,MIDPOINT
 -3.42*y + t**2,RK4
 -0.26*y + t**2,MIDPOINT
 -2.89*y + t**1,RK4
@@ -2960,7 +2960,7 @@ f_expression,best_rk_method
 1.32*y + t**1,RK4
 3.95*y + t**2,RK4
 -3.42*y + t**2,RK4
--0.26*y + t**1,HEUN
+-0.26*y + t**1,MIDPOINT
 3.95*y + t**1,RK4
 5.0*y + t**2,RK4
 -1.84*y + t**1,RK4
@@ -3016,9 +3016,9 @@ f_expression,best_rk_method
 3.95*y + cos(t),RK4
 -1.32*y + sin(t),RK4
 0.26*y + sin(t),MIDPOINT
-0.26*y + sin(t),HEUN
+0.26*y + sin(t),MIDPOINT
 2.37*y + sin(t),RK4
--0.79*y + cos(t),HEUN
+-0.79*y + cos(t),MIDPOINT
 -1.84*y + cos(t),RK4
 2.89*y + sin(t),RK4
 -2.37*y + cos(t),RK4
@@ -3030,12 +3030,12 @@ f_expression,best_rk_method
 5.0*y + sin(t),RK4
 1.84*y + sin(t),RK4
 -4.47*y + sin(t),RK4
--0.26*y + sin(t),HEUN
+-0.26*y + sin(t),MIDPOINT
 -1.84*y + sin(t),RK4
 5.0*y + cos(t),RK4
 -0.79*y + cos(t),MIDPOINT
 1.84*y + cos(t),RK4
-0.26*y + cos(t),MIDPOINT
+0.26*y + cos(t),HEUN
 3.95*y + sin(t),RK4
 -1.32*y + cos(t),RK4
 -2.37*y + cos(t),RK4
@@ -3058,7 +3058,7 @@ f_expression,best_rk_method
 -1.84*y + sin(t),RK4
 0.79*y + cos(t),RK4
 1.32*y + cos(t),RK4
--0.26*y + sin(t),HEUN
+-0.26*y + sin(t),MIDPOINT
 -3.42*y + cos(t),RK4
 -1.84*y + cos(t),RK4
 0.79*y + cos(t),RK4
@@ -3070,13 +3070,13 @@ f_expression,best_rk_method
 -3.95*y + cos(t),RK4
 4.47*y + sin(t),RK4
 1.84*y + sin(t),RK4
--0.26*y + cos(t),MIDPOINT
+-0.26*y + cos(t),HEUN
 1.84*y + sin(t),RK4
 4.47*y + cos(t),RK4
 -1.84*y + cos(t),RK4
 -2.37*y + cos(t),RK4
 -3.95*y + cos(t),RK4
--0.26*y + cos(t),HEUN
+-0.26*y + cos(t),MIDPOINT
 0.79*y + sin(t),RK4
 2.89*y + sin(t),RK4
 2.37*y + sin(t),RK4
@@ -3167,7 +3167,7 @@ f_expression,best_rk_method
 3.95*y + cos(t),RK4
 -3.42*y + cos(t),RK4
 -2.37*y + cos(t),RK4
--0.26*y + sin(t),HEUN
+-0.26*y + sin(t),MIDPOINT
 3.95*y + cos(t),RK4
 2.89*y + cos(t),RK4
 5.0*y + sin(t),RK4
@@ -3181,7 +3181,7 @@ f_expression,best_rk_method
 -1.84*y + sin(t),RK4
 -1.84*y + cos(t),RK4
 3.42*y + sin(t),RK4
-0.26*y + cos(t),HEUN
+0.26*y + cos(t),MIDPOINT
 5.0*y + sin(t),RK4
 -3.42*y + sin(t),RK4
 -3.95*y + cos(t),RK4
@@ -3286,7 +3286,7 @@ f_expression,best_rk_method
 3.42*y + cos(t),RK4
 -0.26*y + cos(t),HEUN
 -2.37*y + sin(t),RK4
--1.32*y + cos(t),MIDPOINT
+-1.32*y + cos(t),HEUN
 -2.89*y + cos(t),RK4
 -4.47*y + sin(t),RK4
 -3.42*y + sin(t),RK4
@@ -3314,10 +3314,10 @@ f_expression,best_rk_method
 -5.0*y + sin(t),RK4
 0.26*y + sin(t),MIDPOINT
 2.89*y + cos(t),RK4
-0.26*y + cos(t),HEUN
+0.26*y + cos(t),MIDPOINT
 -4.47*y + cos(t),RK4
 -5.0*y + sin(t),RK4
--0.26*y + sin(t),MIDPOINT
+-0.26*y + sin(t),HEUN
 -2.89*y + sin(t),RK4
 -1.32*y + cos(t),RK4
 0.79*y + cos(t),RK4
@@ -3368,9 +3368,9 @@ f_expression,best_rk_method
 3.95*y + sin(t),RK4
 0.26*y + cos(t),MIDPOINT
 -4.47*y + cos(t),RK4
--0.79*y + sin(t),HEUN
+-0.79*y + sin(t),MIDPOINT
 0.79*y + cos(t),RK4
--0.26*y + sin(t),MIDPOINT
+-0.26*y + sin(t),HEUN
 -3.95*y + sin(t),RK4
 -0.26*y + sin(t),HEUN
 -4.47*y + sin(t),RK4
@@ -3389,12 +3389,12 @@ f_expression,best_rk_method
 1.84*y + sin(t),RK4
 -1.84*y + sin(t),RK4
 2.89*y + sin(t),RK4
--0.26*y + sin(t),MIDPOINT
+-0.26*y + sin(t),HEUN
 2.37*y + cos(t),RK4
 -2.37*y + sin(t),RK4
 0.79*y + cos(t),RK4
 -2.37*y + cos(t),RK4
--0.79*y + cos(t),MIDPOINT
+-0.79*y + cos(t),HEUN
 4.47*y + cos(t),RK4
 -0.26*y + cos(t),MIDPOINT
 -2.89*y + cos(t),RK4
@@ -3417,7 +3417,7 @@ f_expression,best_rk_method
 -1.84*y + sin(t),RK4
 1.84*y + cos(t),RK4
 -2.37*y + sin(t),RK4
--0.79*y + cos(t),HEUN
+-0.79*y + cos(t),MIDPOINT
 2.37*y + cos(t),RK4
 -0.79*y + sin(t),HEUN
 1.84*y + cos(t),RK4
@@ -3459,7 +3459,7 @@ f_expression,best_rk_method
 1.32*y + sin(t),RK4
 1.32*y + sin(t),RK4
 -2.89*y + cos(t),RK4
-0.26*y + sin(t),HEUN
+0.26*y + sin(t),MIDPOINT
 -3.42*y + sin(t),RK4
 4.47*y + cos(t),RK4
 -2.37*y + cos(t),RK4
@@ -3548,7 +3548,7 @@ f_expression,best_rk_method
 -2.89*y + sin(t),RK4
 2.37*y + sin(t),RK4
 -3.95*y + cos(t),RK4
--0.26*y + sin(t),HEUN
+-0.26*y + sin(t),MIDPOINT
 -3.42*y + sin(t),RK4
 2.37*y + sin(t),RK4
 2.89*y + cos(t),RK4
@@ -3578,10 +3578,10 @@ f_expression,best_rk_method
 -3.42*y + sin(t),RK4
 -0.26*y + sin(t),HEUN
 -2.37*y + sin(t),RK4
--0.26*y + cos(t),MIDPOINT
-0.79*y + cos(t),RK4
-0.79*y + cos(t),RK4
 -0.26*y + cos(t),HEUN
+0.79*y + cos(t),RK4
+0.79*y + cos(t),RK4
+-0.26*y + cos(t),MIDPOINT
 5.0*y + cos(t),RK4
 3.42*y + sin(t),RK4
 -1.32*y + sin(t),RK4
@@ -3594,13 +3594,13 @@ f_expression,best_rk_method
 1.84*y + cos(t),RK4
 -4.47*y + cos(t),RK4
 1.84*y + cos(t),RK4
--0.26*y + sin(t),MIDPOINT
+-0.26*y + sin(t),HEUN
 -2.89*y + cos(t),RK4
 -0.26*y + sin(t),MIDPOINT
 -0.26*y + sin(t),HEUN
 2.37*y + sin(t),RK4
 4.47*y + sin(t),RK4
--0.26*y + sin(t),HEUN
+-0.26*y + sin(t),MIDPOINT
 -5.0*y + sin(t),RK4
 0.79*y + cos(t),RK4
 3.95*y + sin(t),RK4
@@ -3718,7 +3718,7 @@ f_expression,best_rk_method
 3.95*y + sin(t),RK4
 1.84*y + cos(t),RK4
 -1.84*y + sin(t),RK4
--0.26*y + sin(t),HEUN
+-0.26*y + sin(t),MIDPOINT
 -2.89*y + sin(t),RK4
 2.37*y + cos(t),RK4
 2.89*y + sin(t),RK4
@@ -3778,7 +3778,7 @@ f_expression,best_rk_method
 2.89*y + sin(t),RK4
 -1.32*y + sin(t),RK4
 1.84*y + sin(t),RK4
--0.26*y + cos(t),HEUN
+-0.26*y + cos(t),MIDPOINT
 -3.95*y + cos(t),RK4
 -2.89*y + cos(t),RK4
 2.37*y + sin(t),RK4
@@ -3800,8 +3800,8 @@ f_expression,best_rk_method
 4.47*y + cos(t),RK4
 1.32*y + cos(t),RK4
 -4.47*y + sin(t),RK4
--0.79*y + cos(t),HEUN
--0.26*y + sin(t),MIDPOINT
+-0.79*y + cos(t),MIDPOINT
+-0.26*y + sin(t),HEUN
 -0.79*y + cos(t),RK4
 -2.37*y + cos(t),RK4
 -3.42*y + sin(t),RK4
@@ -3830,7 +3830,7 @@ f_expression,best_rk_method
 3.42*y + sin(t),RK4
 -0.26*y + cos(t),MIDPOINT
 1.32*y + cos(t),RK4
--0.26*y + sin(t),MIDPOINT
+-0.26*y + sin(t),HEUN
 -0.26*y + cos(t),MIDPOINT
 -1.32*y + cos(t),HEUN
 2.37*y + cos(t),RK4
@@ -3841,7 +3841,7 @@ f_expression,best_rk_method
 -0.79*y + cos(t),RK4
 2.37*y + cos(t),RK4
 -4.47*y + cos(t),RK4
--1.32*y + cos(t),HEUN
+-1.32*y + cos(t),MIDPOINT
 2.37*y + cos(t),RK4
 -2.37*y + sin(t),RK4
 5.0*y + cos(t),RK4
@@ -3857,7 +3857,7 @@ f_expression,best_rk_method
 -0.26*y + sin(t),RK4
 -1.32*y + sin(t),RK4
 -3.42*y + cos(t),RK4
--0.79*y + sin(t),HEUN
+-0.79*y + sin(t),MIDPOINT
 3.42*y + cos(t),RK4
 3.95*y + sin(t),RK4
 4.47*y + cos(t),RK4
@@ -3888,7 +3888,7 @@ f_expression,best_rk_method
 2.37*y + sin(t),RK4
 2.89*y + sin(t),RK4
 -2.89*y + cos(t),RK4
--0.26*y + sin(t),MIDPOINT
+-0.26*y + sin(t),HEUN
 -0.79*y + cos(t),RK4
 4.47*y + sin(t),RK4
 3.42*y + sin(t),RK4
@@ -3954,7 +3954,7 @@ f_expression,best_rk_method
 0.79*y + cos(t),RK4
 -1.32*y + cos(t),RK4
 -2.89*y + cos(t),RK4
--0.26*y + sin(t),MIDPOINT
+-0.26*y + sin(t),HEUN
 4.47*y + cos(t),RK4
 -1.84*y + cos(t),RK4
 -0.26*y + cos(t),MIDPOINT
@@ -3983,10 +3983,10 @@ f_expression,best_rk_method
 -2.37*y + cos(t),RK4
 3.42*y + sin(t),RK4
 -2.89*y + cos(t),RK4
--0.26*y + sin(t),HEUN
+-0.26*y + sin(t),MIDPOINT
 1.32*y + sin(t),RK4
 -2.89*y + sin(t),RK4
--0.26*y + sin(t),HEUN
+-0.26*y + sin(t),MIDPOINT
 -1.84*y + cos(t),RK4
 -1.32*y + sin(t),RK4
 -5.0*y + cos(t),RK4
@@ -4016,7 +4016,7 @@ f_expression,best_rk_method
 2.37*y + t**2 + sin(t),RK4
 -4.47*y + t**1 + cos(t),RK4
 -4.47*y + t**2 + cos(t),RK4
--0.26*y + t**1 + cos(t),HEUN
+-0.26*y + t**1 + cos(t),MIDPOINT
 0.79*y + t**2 + sin(t),RK4
 -0.26*y + t**1 + sin(t),HEUN
 -4.47*y + t**2 + sin(t),RK4
@@ -4033,7 +4033,7 @@ f_expression,best_rk_method
 -2.37*y + t**2 + sin(t),RK4
 -2.37*y + t**2 + cos(t),RK4
 -1.84*y + t**1 + cos(t),RK4
--0.79*y + t**2 + cos(t),HEUN
+-0.79*y + t**2 + cos(t),MIDPOINT
 -1.32*y + t**1 + cos(t),RK4
 5.0*y + t**2 + cos(t),RK4
 5.0*y + t**2 + cos(t),RK4
@@ -4080,7 +4080,7 @@ f_expression,best_rk_method
 4.47*y + t**2 + cos(t),RK4
 -2.37*y + t**2 + cos(t),RK4
 -0.26*y + t**1 + sin(t),HEUN
--0.26*y + t**2 + cos(t),MIDPOINT
+-0.26*y + t**2 + cos(t),HEUN
 -1.84*y + t**2 + sin(t),RK4
 -0.79*y + t**2 + cos(t),RK4
 -2.37*y + t**2 + sin(t),RK4
@@ -4321,7 +4321,7 @@ f_expression,best_rk_method
 -1.32*y + t**1 + sin(t),RK4
 2.89*y + t**1 + sin(t),RK4
 -2.37*y + t**2 + cos(t),RK4
--0.26*y + t**2 + cos(t),HEUN
+-0.26*y + t**2 + cos(t),MIDPOINT
 1.32*y + t**1 + sin(t),RK4
 -1.84*y + t**1 + sin(t),RK4
 -3.42*y + t**1 + sin(t),RK4
@@ -4364,7 +4364,7 @@ f_expression,best_rk_method
 3.42*y + t**1 + sin(t),RK4
 -5.0*y + t**1 + sin(t),RK4
 0.26*y + t**2 + sin(t),HEUN
--0.26*y + t**1 + cos(t),HEUN
+-0.26*y + t**1 + cos(t),MIDPOINT
 4.47*y + t**2 + cos(t),RK4
 -2.37*y + t**2 + cos(t),RK4
 -2.37*y + t**1 + sin(t),RK4
@@ -4405,7 +4405,7 @@ f_expression,best_rk_method
 -2.89*y + t**1 + sin(t),RK4
 -2.37*y + t**2 + sin(t),RK4
 4.47*y + t**2 + cos(t),RK4
--0.26*y + t**1 + cos(t),HEUN
+-0.26*y + t**1 + cos(t),MIDPOINT
 -1.32*y + t**1 + cos(t),RK4
 -3.95*y + t**1 + sin(t),RK4
 -4.47*y + t**2 + sin(t),RK4
@@ -4574,7 +4574,7 @@ f_expression,best_rk_method
 2.89*y + t**2 + sin(t),RK4
 -3.95*y + t**2 + cos(t),RK4
 5.0*y + t**1 + cos(t),RK4
--0.26*y + t**1 + cos(t),HEUN
+-0.26*y + t**1 + cos(t),MIDPOINT
 4.47*y + t**1 + cos(t),RK4
 0.26*y + t**2 + cos(t),RK4
 1.84*y + t**1 + sin(t),RK4
@@ -4590,7 +4590,7 @@ f_expression,best_rk_method
 1.84*y + t**2 + sin(t),RK4
 1.32*y + t**2 + sin(t),RK4
 -3.42*y + t**2 + sin(t),RK4
--0.79*y + t**1 + cos(t),HEUN
+-0.79*y + t**1 + cos(t),MIDPOINT
 1.84*y + t**1 + sin(t),RK4
 -5.0*y + t**1 + cos(t),RK4
 -0.79*y + t**2 + cos(t),MIDPOINT
@@ -4657,7 +4657,7 @@ f_expression,best_rk_method
 2.37*y + t**2 + cos(t),RK4
 -4.47*y + t**1 + cos(t),RK4
 3.42*y + t**1 + sin(t),RK4
-0.26*y + t**2 + cos(t),MIDPOINT
+0.26*y + t**2 + cos(t),HEUN
 -1.84*y + t**1 + cos(t),RK4
 -1.32*y + t**1 + sin(t),RK4
 -2.89*y + t**1 + cos(t),RK4
@@ -4677,9 +4677,9 @@ f_expression,best_rk_method
 -2.37*y + t**2 + sin(t),RK4
 1.84*y + t**2 + cos(t),RK4
 2.89*y + t**1 + cos(t),RK4
--0.26*y + t**1 + cos(t),HEUN
+-0.26*y + t**1 + cos(t),MIDPOINT
 4.47*y + t**1 + cos(t),RK4
--0.26*y + t**1 + sin(t),MIDPOINT
+-0.26*y + t**1 + sin(t),HEUN
 5.0*y + t**2 + cos(t),RK4
 -3.95*y + t**1 + sin(t),RK4
 1.84*y + t**2 + sin(t),RK4
@@ -4691,9 +4691,9 @@ f_expression,best_rk_method
 -0.79*y + t**2 + sin(t),RK4
 -2.89*y + t**1 + cos(t),RK4
 -2.37*y + t**1 + cos(t),RK4
--0.26*y + t**1 + cos(t),HEUN
+-0.26*y + t**1 + cos(t),MIDPOINT
 -2.37*y + t**2 + cos(t),RK4
--0.26*y + t**2 + cos(t),HEUN
+-0.26*y + t**2 + cos(t),MIDPOINT
 -0.26*y + t**2 + sin(t),MIDPOINT
 -2.89*y + t**1 + sin(t),RK4
 4.47*y + t**1 + sin(t),RK4
@@ -4722,7 +4722,7 @@ f_expression,best_rk_method
 3.42*y + t**1 + sin(t),RK4
 -1.32*y + t**2 + sin(t),RK4
 -3.95*y + t**2 + cos(t),RK4
--0.26*y + t**1 + cos(t),HEUN
+-0.26*y + t**1 + cos(t),MIDPOINT
 3.95*y + t**2 + sin(t),RK4
 3.95*y + t**2 + sin(t),RK4
 -1.84*y + t**1 + cos(t),RK4
@@ -4786,7 +4786,7 @@ f_expression,best_rk_method
 -1.32*y + t**2 + cos(t),RK4
 -4.47*y + t**2 + sin(t),RK4
 -2.37*y + t**1 + sin(t),RK4
--0.26*y + t**1 + cos(t),MIDPOINT
+-0.26*y + t**1 + cos(t),HEUN
 -2.89*y + t**2 + cos(t),RK4
 -5.0*y + t**2 + sin(t),RK4
 0.79*y + t**2 + sin(t),RK4
@@ -4899,7 +4899,7 @@ f_expression,best_rk_method
 -5.0*y + t**1 + sin(t),RK4
 -3.42*y + t**1 + sin(t),RK4
 1.32*y + t**2 + cos(t),RK4
--0.26*y + t**1 + cos(t),MIDPOINT
+-0.26*y + t**1 + cos(t),HEUN
 -1.84*y + t**2 + cos(t),RK4
 -2.89*y + t**1 + sin(t),RK4
 -3.95*y + t**1 + cos(t),RK4
@@ -5112,319 +5112,319 @@ f_expression,best_rk_method
 0.79*y + exp(t),RK4
 -1.32*y + exp(t),RK4
 -2.89*y + exp(t),RK4
-0.26*y + exp(t),HEUN
--5.0*y + exp(t),RK4
-2.89*y + exp(t),RK4
--1.84*y + exp(t),RK4
--2.37*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
-3.42*y + exp(t),RK4
-1.32*y + exp(t),RK4
-2.89*y + exp(t),RK4
--1.32*y + exp(t),RK4
-2.37*y + exp(t),RK4
-1.84*y + exp(t),RK4
--5.0*y + exp(t),RK4
-3.42*y + exp(t),RK4
--0.26*y + exp(t),HEUN
-3.42*y + exp(t),RK4
-3.95*y + exp(t),RK4
--2.89*y + exp(t),RK4
--2.89*y + exp(t),RK4
--2.89*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
--4.47*y + exp(t),RK4
--5.0*y + exp(t),RK4
--1.32*y + exp(t),RK4
-2.89*y + exp(t),RK4
-3.95*y + exp(t),RK4
--5.0*y + exp(t),RK4
-2.89*y + exp(t),RK4
--3.95*y + exp(t),RK4
--2.37*y + exp(t),RK4
-2.37*y + exp(t),RK4
-0.79*y + exp(t),RK4
--0.79*y + exp(t),RK4
-1.32*y + exp(t),RK4
--4.47*y + exp(t),RK4
-5.0*y + exp(t),RK4
-2.37*y + exp(t),RK4
-3.95*y + exp(t),RK4
--3.42*y + exp(t),RK4
-3.95*y + exp(t),RK4
-2.37*y + exp(t),RK4
-2.89*y + exp(t),RK4
-2.37*y + exp(t),RK4
-2.37*y + exp(t),RK4
-4.47*y + exp(t),RK4
-0.26*y + exp(t),HEUN
--2.89*y + exp(t),RK4
-5.0*y + exp(t),RK4
-1.84*y + exp(t),RK4
-1.84*y + exp(t),RK4
-4.47*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
-3.95*y + exp(t),RK4
--2.37*y + exp(t),RK4
-0.79*y + exp(t),RK4
-3.95*y + exp(t),RK4
-3.95*y + exp(t),RK4
-1.84*y + exp(t),RK4
-2.37*y + exp(t),RK4
--2.37*y + exp(t),RK4
--1.32*y + exp(t),RK4
-0.26*y + exp(t),HEUN
-4.47*y + exp(t),RK4
--3.42*y + exp(t),RK4
-5.0*y + exp(t),RK4
--5.0*y + exp(t),RK4
--2.37*y + exp(t),RK4
--2.37*y + exp(t),RK4
--1.32*y + exp(t),RK4
-3.42*y + exp(t),RK4
--3.42*y + exp(t),RK4
-0.26*y + exp(t),RK4
-3.95*y + exp(t),RK4
--2.89*y + exp(t),RK4
--3.42*y + exp(t),RK4
-1.32*y + exp(t),RK4
--1.84*y + exp(t),RK4
--4.47*y + exp(t),RK4
-2.89*y + exp(t),RK4
-2.37*y + exp(t),RK4
-3.42*y + exp(t),RK4
-0.79*y + exp(t),RK4
-0.79*y + exp(t),RK4
--2.37*y + exp(t),RK4
-3.95*y + exp(t),RK4
--4.47*y + exp(t),RK4
--0.79*y + exp(t),RK4
-1.32*y + exp(t),RK4
-4.47*y + exp(t),RK4
-2.37*y + exp(t),RK4
--2.37*y + exp(t),RK4
-4.47*y + exp(t),RK4
--2.89*y + exp(t),RK4
-4.47*y + exp(t),RK4
--5.0*y + exp(t),RK4
--1.84*y + exp(t),RK4
-3.42*y + exp(t),RK4
-5.0*y + exp(t),RK4
-4.47*y + exp(t),RK4
--3.95*y + exp(t),RK4
-4.47*y + exp(t),RK4
-5.0*y + exp(t),RK4
-1.32*y + exp(t),RK4
--2.89*y + exp(t),RK4
--1.84*y + exp(t),RK4
-2.37*y + exp(t),RK4
--2.89*y + exp(t),RK4
-5.0*y + exp(t),RK4
--3.42*y + exp(t),RK4
--3.42*y + exp(t),RK4
--4.47*y + exp(t),RK4
--4.47*y + exp(t),RK4
-0.26*y + exp(t),HEUN
--1.32*y + exp(t),RK4
--1.84*y + exp(t),RK4
-4.47*y + exp(t),RK4
-1.32*y + exp(t),RK4
-3.95*y + exp(t),RK4
--2.37*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
--2.89*y + exp(t),RK4
--3.42*y + exp(t),RK4
--5.0*y + exp(t),RK4
-1.32*y + exp(t),RK4
-0.26*y + exp(t),RK4
-0.26*y + exp(t),HEUN
-5.0*y + exp(t),RK4
--2.89*y + exp(t),RK4
--1.84*y + exp(t),RK4
-1.32*y + exp(t),RK4
--5.0*y + exp(t),RK4
-4.47*y + exp(t),RK4
--2.89*y + exp(t),RK4
--5.0*y + exp(t),RK4
-2.37*y + exp(t),RK4
--0.79*y + exp(t),RK4
-0.79*y + exp(t),RK4
-3.95*y + exp(t),RK4
--0.26*y + exp(t),HEUN
--5.0*y + exp(t),RK4
--2.89*y + exp(t),RK4
-2.89*y + exp(t),RK4
--3.42*y + exp(t),RK4
--2.37*y + exp(t),RK4
-3.95*y + exp(t),RK4
--4.47*y + exp(t),RK4
-5.0*y + exp(t),RK4
--3.95*y + exp(t),RK4
-4.47*y + exp(t),RK4
--1.32*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
--3.42*y + exp(t),RK4
--0.79*y + exp(t),RK4
--5.0*y + exp(t),RK4
--0.26*y + exp(t),HEUN
--4.47*y + exp(t),RK4
-5.0*y + exp(t),RK4
-2.89*y + exp(t),RK4
-2.37*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
-0.79*y + exp(t),RK4
-0.79*y + exp(t),RK4
-1.84*y + exp(t),RK4
--0.79*y + exp(t),RK4
--2.89*y + exp(t),RK4
-1.84*y + exp(t),RK4
--4.47*y + exp(t),RK4
--3.42*y + exp(t),RK4
--4.47*y + exp(t),RK4
-1.84*y + exp(t),RK4
--3.42*y + exp(t),RK4
--0.79*y + exp(t),RK4
--2.37*y + exp(t),RK4
--4.47*y + exp(t),RK4
-3.42*y + exp(t),RK4
-0.79*y + exp(t),RK4
--2.89*y + exp(t),RK4
--3.42*y + exp(t),RK4
--4.47*y + exp(t),RK4
--1.84*y + exp(t),RK4
-1.84*y + exp(t),RK4
--1.32*y + exp(t),RK4
--1.32*y + exp(t),RK4
--4.47*y + exp(t),RK4
-3.42*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
--2.37*y + exp(t),RK4
--1.84*y + exp(t),RK4
-4.47*y + exp(t),RK4
-0.79*y + exp(t),RK4
-0.79*y + exp(t),RK4
-1.84*y + exp(t),RK4
-2.89*y + exp(t),RK4
--3.42*y + exp(t),RK4
-0.26*y + exp(t),RK4
--1.84*y + exp(t),RK4
--2.37*y + exp(t),RK4
-1.84*y + exp(t),RK4
--2.89*y + exp(t),RK4
-4.47*y + exp(t),RK4
--1.32*y + exp(t),RK4
-2.89*y + exp(t),RK4
--4.47*y + exp(t),RK4
-1.84*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
-4.47*y + exp(t),RK4
--3.42*y + exp(t),RK4
-4.47*y + exp(t),RK4
-2.37*y + exp(t),RK4
--4.47*y + exp(t),RK4
--0.79*y + exp(t),RK4
-3.95*y + exp(t),RK4
-4.47*y + exp(t),RK4
--5.0*y + exp(t),RK4
--3.95*y + exp(t),RK4
--4.47*y + exp(t),RK4
-5.0*y + exp(t),RK4
-4.47*y + exp(t),RK4
-5.0*y + exp(t),RK4
-5.0*y + exp(t),RK4
--1.32*y + exp(t),RK4
-2.37*y + exp(t),RK4
--3.42*y + exp(t),RK4
-5.0*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
-1.32*y + exp(t),RK4
--1.84*y + exp(t),RK4
--4.47*y + exp(t),RK4
-4.47*y + exp(t),RK4
--1.32*y + exp(t),RK4
-1.84*y + exp(t),RK4
-3.42*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
--3.42*y + exp(t),RK4
--5.0*y + exp(t),RK4
--0.79*y + exp(t),RK4
--2.89*y + exp(t),RK4
-2.37*y + exp(t),RK4
-2.37*y + exp(t),RK4
--3.42*y + exp(t),RK4
--4.47*y + exp(t),RK4
--5.0*y + exp(t),RK4
-3.95*y + exp(t),RK4
-0.79*y + exp(t),RK4
-3.42*y + exp(t),RK4
-4.47*y + exp(t),RK4
--3.42*y + exp(t),RK4
--5.0*y + exp(t),RK4
-4.47*y + exp(t),RK4
-3.42*y + exp(t),RK4
-3.95*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
--2.37*y + exp(t),RK4
-0.79*y + exp(t),RK4
--1.32*y + exp(t),RK4
-3.42*y + exp(t),RK4
--5.0*y + exp(t),RK4
--4.47*y + exp(t),RK4
-3.95*y + exp(t),RK4
-2.89*y + exp(t),RK4
--3.95*y + exp(t),RK4
-1.32*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
--3.95*y + exp(t),RK4
-3.42*y + exp(t),RK4
-4.47*y + exp(t),RK4
-5.0*y + exp(t),RK4
-3.42*y + exp(t),RK4
-1.32*y + exp(t),RK4
-2.89*y + exp(t),RK4
--4.47*y + exp(t),RK4
--1.32*y + exp(t),RK4
--3.95*y + exp(t),RK4
--3.42*y + exp(t),RK4
--4.47*y + exp(t),RK4
--1.32*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
--1.32*y + exp(t),RK4
-1.32*y + exp(t),RK4
-2.37*y + exp(t),RK4
-1.32*y + exp(t),RK4
--4.47*y + exp(t),RK4
--0.26*y + exp(t),MIDPOINT
-1.32*y + exp(t),RK4
--0.79*y + exp(t),RK4
--5.0*y + exp(t),RK4
-3.42*y + exp(t),RK4
--3.95*y + exp(t),RK4
--2.89*y + exp(t),RK4
--3.42*y + exp(t),RK4
--2.37*y + exp(t),RK4
--1.32*y + exp(t),RK4
-3.95*y + exp(t),RK4
--5.0*y + exp(t),RK4
--1.32*y + exp(t),RK4
-1.32*y + exp(t),RK4
-3.42*y + exp(t),RK4
--4.47*y + exp(t),RK4
--0.79*y + exp(t),RK4
--2.89*y + exp(t),RK4
-5.0*y + exp(t),RK4
-1.84*y + exp(t),RK4
--3.95*y + exp(t),RK4
--3.95*y + exp(t),RK4
-4.47*y + exp(t),RK4
-5.0*y + exp(t),RK4
-1.84*y + exp(t),RK4
--1.84*y + exp(t),RK4
-1.84*y + exp(t),RK4
--2.37*y + exp(t),RK4
--0.79*y + exp(t),RK4
-3.42*y + exp(t),RK4
 0.26*y + exp(t),MIDPOINT
+-5.0*y + exp(t),RK4
+2.89*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+3.42*y + exp(t),RK4
+1.32*y + exp(t),RK4
+2.89*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+2.37*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+3.42*y + exp(t),RK4
+-0.26*y + exp(t),HEUN
+3.42*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-4.47*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+2.89*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+2.89*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+2.37*y + exp(t),RK4
+0.79*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+1.32*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+5.0*y + exp(t),RK4
+2.37*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+3.95*y + exp(t),RK4
+2.37*y + exp(t),RK4
+2.89*y + exp(t),RK4
+2.37*y + exp(t),RK4
+2.37*y + exp(t),RK4
+4.47*y + exp(t),RK4
+0.26*y + exp(t),MIDPOINT
+-2.89*y + exp(t),RK4
+5.0*y + exp(t),RK4
+1.84*y + exp(t),RK4
+1.84*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+3.95*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+0.79*y + exp(t),RK4
+3.95*y + exp(t),RK4
+3.95*y + exp(t),RK4
+1.84*y + exp(t),RK4
+2.37*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+0.26*y + exp(t),HEUN
+4.47*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+5.0*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+3.42*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+0.26*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+1.32*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+2.89*y + exp(t),RK4
+2.37*y + exp(t),RK4
+3.42*y + exp(t),RK4
+0.79*y + exp(t),RK4
+0.79*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+1.32*y + exp(t),RK4
+4.47*y + exp(t),RK4
+2.37*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+3.42*y + exp(t),RK4
+5.0*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+4.47*y + exp(t),RK4
+5.0*y + exp(t),RK4
+1.32*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+2.37*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+5.0*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+0.26*y + exp(t),HEUN
+-1.32*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+4.47*y + exp(t),RK4
+1.32*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-2.89*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+1.32*y + exp(t),RK4
+0.26*y + exp(t),RK4
+0.26*y + exp(t),HEUN
+5.0*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+1.32*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+2.37*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+0.79*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-5.0*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+2.89*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+5.0*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-3.42*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-4.47*y + exp(t),RK4
+5.0*y + exp(t),RK4
+2.89*y + exp(t),RK4
+2.37*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+0.79*y + exp(t),RK4
+0.79*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+3.42*y + exp(t),RK4
+0.79*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+3.42*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-2.37*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+4.47*y + exp(t),RK4
+0.79*y + exp(t),RK4
+0.79*y + exp(t),RK4
+1.84*y + exp(t),RK4
+2.89*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+0.26*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+2.89*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+4.47*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+4.47*y + exp(t),RK4
+2.37*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+3.95*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+5.0*y + exp(t),RK4
+4.47*y + exp(t),RK4
+5.0*y + exp(t),RK4
+5.0*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+2.37*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+5.0*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+1.32*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+1.84*y + exp(t),RK4
+3.42*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-3.42*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+2.37*y + exp(t),RK4
+2.37*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+3.95*y + exp(t),RK4
+0.79*y + exp(t),RK4
+3.42*y + exp(t),RK4
+4.47*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+4.47*y + exp(t),RK4
+3.42*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-2.37*y + exp(t),RK4
+0.79*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+3.42*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+3.95*y + exp(t),RK4
+2.89*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+1.32*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-3.95*y + exp(t),RK4
+3.42*y + exp(t),RK4
+4.47*y + exp(t),RK4
+5.0*y + exp(t),RK4
+3.42*y + exp(t),RK4
+1.32*y + exp(t),RK4
+2.89*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+-1.32*y + exp(t),RK4
+1.32*y + exp(t),RK4
+2.37*y + exp(t),RK4
+1.32*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-0.26*y + exp(t),MIDPOINT
+1.32*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+3.42*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+-3.42*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+3.95*y + exp(t),RK4
+-5.0*y + exp(t),RK4
+-1.32*y + exp(t),RK4
+1.32*y + exp(t),RK4
+3.42*y + exp(t),RK4
+-4.47*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+-2.89*y + exp(t),RK4
+5.0*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+-3.95*y + exp(t),RK4
+4.47*y + exp(t),RK4
+5.0*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-1.84*y + exp(t),RK4
+1.84*y + exp(t),RK4
+-2.37*y + exp(t),RK4
+-0.79*y + exp(t),RK4
+3.42*y + exp(t),RK4
+0.26*y + exp(t),HEUN
 0.79*y + exp(t),RK4
 2.89*y + exp(t),RK4
 -3.42*y + exp(t),RK4
@@ -5486,7 +5486,7 @@ f_expression,best_rk_method
 -1.32*y + exp(t),RK4
 1.32*y + exp(t),RK4
 -2.37*y + exp(t),RK4
--0.26*y + exp(t),HEUN
+-0.26*y + exp(t),MIDPOINT
 1.32*y + exp(t),RK4
 5.0*y + exp(t),RK4
 -4.47*y + exp(t),RK4
@@ -5709,7 +5709,7 @@ f_expression,best_rk_method
 -1.84*y + exp(t),RK4
 -3.95*y + exp(t),RK4
 -3.95*y + exp(t),RK4
-0.26*y + exp(t),HEUN
+0.26*y + exp(t),MIDPOINT
 0.79*y + exp(t),RK4
 5.0*y + exp(t),RK4
 -2.37*y + exp(t),RK4
@@ -6024,7 +6024,7 @@ f_expression,best_rk_method
 2.89*y + 2.57 + t**1 + sin(t) + exp(t),RK4
 -4.47*y + -1.29 + t**2 + cos(t) + exp(t),RK4
 -1.32*y + -3.0 + t**2 + cos(t) + exp(t),RK4
--0.26*y + 2.14 + t**1 + cos(t) + exp(t),HEUN
+-0.26*y + 2.14 + t**1 + cos(t) + exp(t),MIDPOINT
 -3.95*y + -1.71 + t**2 + sin(t) + exp(t),RK4
 -4.47*y + 0.43 + t**2 + cos(t) + exp(t),RK4
 2.89*y + 1.29 + t**2 + cos(t) + exp(t),RK4
@@ -6142,7 +6142,7 @@ f_expression,best_rk_method
 4.47*y + -2.14 + t**1 + cos(t) + exp(t),RK4
 0.79*y + 0.43 + t**1 + sin(t) + exp(t),RK4
 -5.0*y + 1.29 + t**2 + sin(t) + exp(t),RK4
--0.26*y + -2.57 + t**1 + cos(t) + exp(t),HEUN
+-0.26*y + -2.57 + t**1 + cos(t) + exp(t),MIDPOINT
 -4.47*y + -2.14 + t**2 + cos(t) + exp(t),RK4
 -1.32*y + -0.43 + t**1 + cos(t) + exp(t),RK4
 1.84*y + -2.14 + t**2 + sin(t) + exp(t),RK4
@@ -6435,7 +6435,7 @@ f_expression,best_rk_method
 1.84*y + -1.71 + t**2 + sin(t) + exp(t),RK4
 4.47*y + 2.14 + t**2 + sin(t) + exp(t),RK4
 3.42*y + -1.29 + t**2 + sin(t) + exp(t),RK4
--0.79*y + 2.57 + t**1 + cos(t) + exp(t),HEUN
+-0.79*y + 2.57 + t**1 + cos(t) + exp(t),MIDPOINT
 -4.47*y + -2.14 + t**1 + sin(t) + exp(t),RK4
 -1.84*y + 1.29 + t**2 + sin(t) + exp(t),RK4
 -5.0*y + -2.57 + t**2 + sin(t) + exp(t),RK4
@@ -6470,7 +6470,7 @@ f_expression,best_rk_method
 0.79*y + -3.0 + t**2 + sin(t) + exp(t),RK4
 -3.42*y + 0.86 + t**1 + sin(t) + exp(t),RK4
 -0.26*y + 0.43 + t**1 + sin(t) + exp(t),MIDPOINT
--0.26*y + 3.0 + t**1 + cos(t) + exp(t),HEUN
+-0.26*y + 3.0 + t**1 + cos(t) + exp(t),MIDPOINT
 -5.0*y + -0.86 + t**1 + sin(t) + exp(t),RK4
 0.79*y + 3.0 + t**1 + cos(t) + exp(t),RK4
 0.79*y + 2.14 + t**2 + cos(t) + exp(t),RK4

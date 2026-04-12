@@ -321,6 +321,7 @@ def model_RK_(data):
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred, target_names=labels))
 
+    model.save("model/model.keras")
     joblib.dump(model, "model/model.joblib")
     joblib.dump(scaler, "model/scaler.joblib")
     joblib.dump(label_encoder, "model/encoder.joblib")
